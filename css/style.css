@@ -32,6 +32,10 @@ main {
   display: none;
 }
 
+.weekly {
+  display: block;
+}
+
 
 .big-card-main {
   background: hsl(246, 80%, 60%);
