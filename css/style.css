@@ -12,15 +12,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
   background: hsl(226, 43%, 10%);
-  color: hsl(236, 100%, 87%); 
+  color: white; 
 }
 
 main {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 60px 25px;
+  gap: 25px;
 }
 
 .big-card {
@@ -47,35 +46,45 @@ main {
 }
 
 small {
-  color: hsl(235, 45%, 61%); 
+  color: hsl(236, 100%, 87%);
 }
 
 ul {
   color: hsl(235, 45%, 61%);
   margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  list-style-type: none;
+  line-height: 2.2;
 }
 
 h1 {
-  margin: 0;
+  margin: 20px 0 5px 0;
+  font-weight: 300;
+  font-size: 50px;
 }
 
 h2 {
   margin: 0;
+  font-weight: 300;
+  font-size: 36px;
 }
 
 p {
   margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .active {
-  color: hsl(236, 100%, 87%); 
+  color: white; 
 }
 
 
 /* GENERAL CARD ELEMENTS */ 
 .card {
   width: 230px;
-  height: 210px;
+  height: 215px;
   position: relative;
 }
 
@@ -89,42 +98,73 @@ p {
 }
 
 .card-top {
-  height: 60px;
+  height: 65px;
   width: inherit;
   border-radius: 15px;
 }
 
+.elipses {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 15px;
+}
 
 /* INDIVIDUAL CARD ELEMENTS */ 
 .big-card {
-
+  position: relative;
+  width: 230px;
+  height: 455px;
 }
 .big-card-main {
-
+  border-radius: 15px; 
+  height: 240px;
+  padding: 30px;
+  position: absolute;
+  top: 0;
 }
 .big-card-bottom {
-
+  border-radius: 15px; 
+  height: 120px;
+  width: 170px;
+  bottom: 0;
+  padding: 30px;
+  margin-top: 275px;
 }
 
 .card-one {
-  background: hsl(15, 100%, 70%);
+  background: hsl(15, 100%, 70%) url("../images/icon-work.svg") no-repeat calc(100% - 20px) -15px;
 }
 
 .card-two {
-  background: hsl(195, 74%, 62%);
+  background: hsl(195, 74%, 62%) url("../images/icon-play.svg") no-repeat calc(100% - 20px) -15px;
 }
 .card-three {
-  background: hsl(348, 100%, 68%);
+  background: hsl(348, 100%, 68%) url("../images/icon-study.svg") no-repeat calc(100% - 20px) -15px;
 }
 .card-four {
-  background: hsl(145, 58%, 55%);
+  background: hsl(145, 58%, 55%) url("../images/icon-exercise.svg") no-repeat calc(100% - 20px) -15px;
 }
 .card-five {
-  background: hsl(264, 64%, 52%);
+  background: hsl(264, 64%, 52%) url("../images/icon-social.svg") no-repeat calc(100% - 20px) -15px;
 }
 .card-six {
-  background: hsl(43, 84%, 65%);
+  background: hsl(43, 84%, 65%) url("../images/icon-self-care.svg") no-repeat calc(100% - 20px) -15px;
 }
+
+.face {
+  width: 70px;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.big-card-bottom ul li:hover {
+  cursor: pointer;
+}
+
 /* note: 
 1st create the project without json - using the default html text instead. 
 then after project is finished, use json to get text 
