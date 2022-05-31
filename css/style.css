@@ -1,0 +1,131 @@
+.attribution { font-size: 11px; text-align: center; display: none;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  background: hsl(226, 43%, 10%);
+  color: hsl(236, 100%, 87%); 
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 60px 25px;
+}
+
+.big-card {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.daily, .monthly {
+  display: none;
+}
+
+
+.big-card-main {
+  background: hsl(246, 80%, 60%);
+}
+
+.big-card-bottom {
+  background: hsl(235, 46%, 20%);
+}
+
+.card-main {
+  background: hsl(235, 46%, 20%);
+}
+
+small {
+  color: hsl(235, 45%, 61%); 
+}
+
+ul {
+  color: hsl(235, 45%, 61%);
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.active {
+  color: hsl(236, 100%, 87%); 
+}
+
+
+/* GENERAL CARD ELEMENTS */ 
+.card {
+  width: 230px;
+  height: 210px;
+  position: relative;
+}
+
+.card-main {
+  padding: 30px;
+  height: 120px;
+  width: 170px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-top {
+  height: 60px;
+  width: inherit;
+  border-radius: 15px;
+}
+
+
+/* INDIVIDUAL CARD ELEMENTS */ 
+.big-card {
+
+}
+.big-card-main {
+
+}
+.big-card-bottom {
+
+}
+
+.card-one {
+  background: hsl(15, 100%, 70%);
+}
+
+.card-two {
+  background: hsl(195, 74%, 62%);
+}
+.card-three {
+  background: hsl(348, 100%, 68%);
+}
+.card-four {
+  background: hsl(145, 58%, 55%);
+}
+.card-five {
+  background: hsl(264, 64%, 52%);
+}
+.card-six {
+  background: hsl(43, 84%, 65%);
+}
+/* note: 
+1st create the project without json - using the default html text instead. 
+then after project is finished, use json to get text 
+*/ 
